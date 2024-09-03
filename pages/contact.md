@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <!--The contents of the header goes here-->
+        <h1>CodeClan Blog Site</h1>
+        <nav>
+            <ul id="nav-ul">
+                <li>
+                    <a href="/rex1411.github.io/index.html" class="navbutton">Home</a>
+                </li>
+                <li>
+                    <a href="/rex1411.github.io/about.html" class="navbutton">About</a>
+                </li>
+                <li>
+                    <a href="/rex1411.github.io/blog.html" class="navbutton">Blog</a>
+                </li>
+                <li>
+                    <a href="/rex1411.github.io/contact.html" class="navbutton">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Contact</h2>
+        <!--Main content of the website can go here-->
+    </main>
+    <footer>
+         <!--Footer goes here-->
+    </footer>  
+</body>
+</html>
