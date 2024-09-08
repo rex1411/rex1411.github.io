@@ -9,16 +9,17 @@ p{
 }
 
 #logo {
-    margin:0px;
+    margin:15px;
     padding: 8px;
     font-family: "Fredoka One", sans-serif;
-    width:28%;
+    width:40%;
     height: 16%;
     text-shadow: 
         1px 0px 0px black,   /* Right */
        -1px 0px 0px black,   /* Left */
         0px 1px 0px black,   /* Bottom */
         0px -1px 0px black;  /* Top */
+
 
 
 }
@@ -31,7 +32,7 @@ body > header {
     background-color: orange;
     color:white;
     display: flex;
-    height: 12vh;
+    height: 15vh;
     align-items: center;
     justify-content: space-around;
 }
@@ -40,6 +41,7 @@ body > header {
     display: flex;
 
 }
+
 
 #nav-ul > li {
     padding: 8px;
@@ -75,29 +77,30 @@ body > main article {
     width: 70%;
 }
 
-
-
-form {
-    text-align: center;
-    
-}
 h2{
+    text-align: center;
+}
+
+article > h3{
+    text-align: center;
+}
+article > h4{
     text-align: center;
 }
 
 body > footer {
     background-color: orange;
     display: flex;
+    justify-content: space-around;
 }
 
 img{
-    border-radius: 50%;
+    border-radius: 0%;
 }
 
 #footer-ul{
     display: flex;
     list-style: none;
-
 
 }
 #footer-ul > div > li {
