@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const paragraphs = document.querySelectorAll("p");
 
     const champions = [];
-
     const element = document.getElementById("articles-content");
     const child = document.getElementById("SecondArticle");
     let championType = getStoredValue('champFilter');
@@ -32,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
             for (let i = 0; i < champions.length; i++) {
                 let CurrentChamp = champions[i]
+
                 if (data.data.hasOwnProperty(CurrentChamp)) {
                     fetch("https://ddragon.leagueoflegends.com/cdn/14.17.1/data/en_US/champion/"+CurrentChamp+".json")
                     .then(response => response.json())
@@ -42,9 +42,23 @@ document.addEventListener("DOMContentLoaded", () => {
                         let spellName = [];
                         let spellDescription = [];
                         let spellImage = [];
+                        let allytips = [];
+                        let enemytips = [];
+
+                        
+                        for (let i = 0; i < data.data[CurrentChamp].allytips.length; i++) {
+                            let objallytips = data.data[CurrentChamp].allytips[i];
+                            console.log(objallytips)
+                            allytips.push(objallytips);
+                        }
+                        for (let i = 0; i < data.data[CurrentChamp].enemytips.length; i++) {
+                            let objenemytips = data.data[CurrentChamp].enemytips[i];
+                            console.log(objenemytips)
+                            enemytips.push(objenemytips);
+                        }
 
                         for (let i = 0; i < data.data[CurrentChamp].spells.length; i++) {
-                            let obj = data.data[CurrentChamp].spells[i]
+                            let obj = data.data[CurrentChamp].spells[i];
                             spellName.push(obj.name);
                             spellDescription.push(obj.description);
                             spellImage.push(obj.image.full);
@@ -117,7 +131,16 @@ document.addEventListener("DOMContentLoaded", () => {
                         .appendChild(document.createTextNode(spellDescription[4]))
                         .parentNode.parentNode
                         .appendChild(SpellP)
-                        .parentNode;
+                        .parentNode
+                        .appendChild(document.createElement("h4"))
+                        .appendChild(document.createTextNode("Tips and Tricks"))
+                        .parentNode.parentNode
+                        .appendChild(document.createElement("p"))
+                        .appendChild(document.createTextNode(allytips))
+                        .parentNode.parentNode
+                        .appendChild(document.createElement("p"))
+                        .appendChild(document.createTextNode(enemytips))
+                        .parentNode.parentNode;
                     
                         
 
