@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const element = document.getElementById("articles-content");
     const child = document.getElementById("SecondArticle");
     let championType = getStoredValue('champFilter');
-    //console.log(championType)
+    console.log(championType)
 
         fetch("https://ddragon.leagueoflegends.com/cdn/14.17.1/data/en_US/champion.json")
         .then(response => response.json())
@@ -191,8 +191,12 @@ function storeValue(key, value) {
 
 function getStoredValue(key) {
     if (localStorage) {
+        if (localStorage.getItem(key) == null)
+        {
+            storeValue('champFilter', "All");
+        }
         return localStorage.getItem(key);
     } else {
-        return storeValue('champFilter', "All");
+        return $.cookies.get(key);
     }
 }
