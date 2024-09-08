@@ -9,13 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const element = document.getElementById("articles-content");
     const child = document.getElementById("SecondArticle");
     let championType = getStoredValue('champFilter');
-    console.log(championType)
+    //console.log(championType)
 
         fetch("https://ddragon.leagueoflegends.com/cdn/14.17.1/data/en_US/champion.json")
         .then(response => response.json())
         .then(data => {
             for (champion in data.data) {
-                console.log(data.data[champion].tags);
+                //console.log(data.data[champion].tags);
                 if (championType != "All") {
                     for(let i = 0; i < data.data[champion].tags.length; i++) {
                     if (championType == data.data[champion].tags[i]) {
@@ -131,49 +131,49 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     document.getElementById("All").addEventListener("click", function(){
-        console.log(this.getAttribute('data-filter'));
+        //console.log(this.getAttribute('data-filter'));
         storeValue('champFilter',this.getAttribute('data-filter'));
         location.reload();
 
       });
 
     document.getElementById("Fighter").addEventListener("click", function(){
-        console.log(this.getAttribute('data-filter'));
+        //console.log(this.getAttribute('data-filter'));
         storeValue('champFilter',this.getAttribute('data-filter'));
         location.reload();
 
       });
 
       document.getElementById("Mage").addEventListener("click", function(){
-        console.log(this.getAttribute('data-filter'));
+        //console.log(this.getAttribute('data-filter'));
         storeValue('champFilter',this.getAttribute('data-filter'));
         location.reload();
 
       });
 
       document.getElementById("Support").addEventListener("click", function(){
-        console.log(this.getAttribute('data-filter'));
+        //console.log(this.getAttribute('data-filter'));
         storeValue('champFilter',this.getAttribute('data-filter'));
         location.reload();
 
       });
 
       document.getElementById("Tank").addEventListener("click", function(){
-        console.log(this.getAttribute('data-filter'));
+        //console.log(this.getAttribute('data-filter'));
         storeValue('champFilter',this.getAttribute('data-filter'));
         location.reload();
 
       });
 
       document.getElementById("Assassin").addEventListener("click", function(){
-        console.log(this.getAttribute('data-filter'));
+        //console.log(this.getAttribute('data-filter'));
         storeValue('champFilter',this.getAttribute('data-filter'));
         location.reload();
 
       });
 
       document.getElementById("Marksman").addEventListener("click", function(){
-        console.log(this.getAttribute('data-filter'));
+        //console.log(this.getAttribute('data-filter'));
         storeValue('champFilter',this.getAttribute('data-filter'));
         location.reload();
 
