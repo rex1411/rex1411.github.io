@@ -56,6 +56,9 @@ body > header > nav > ul {
     
 }
 
+#championRoles{
+    text-align: center;
+}
 .navbutton{
     color: white;
     text-decoration: none;

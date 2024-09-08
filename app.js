@@ -11,6 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let championType = getStoredValue('champFilter');
     console.log(championType)
 
+    document.getElementById("championRoles").innerHTML = "Role: " + championType;
+    
+
         fetch("https://ddragon.leagueoflegends.com/cdn/14.17.1/data/en_US/champion.json")
         .then(response => response.json())
         .then(data => {
