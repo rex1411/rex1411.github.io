@@ -2,23 +2,25 @@ body {
     font-family: Helvetica, Arial, Sans-serif;
     margin:0px;
     font-size: 1.5vw;
+
 }
 
 p{
     font-size: 0.8em
 }
 
-#logo {
+.logo {
+    color:#9C92A3;
     margin:15px;
     padding: 8px;
     font-family: "Fredoka One", sans-serif;
     width:40%;
     height: 16%;
     text-shadow: 
-        1px 0px 0px black,   /* Right */
-       -1px 0px 0px black,   /* Left */
-        0px 1px 0px black,   /* Bottom */
-        0px -1px 0px black;  /* Top */
+        1px 0px 0px #92C9B1,   /* Right */
+       -1px 0px 0px #92C9B1,   /* Left */
+        0px 1px 0px #92C9B1,   /* Bottom */
+        0px -1px 0px #92C9B1;  /* Top */
 
 
 
@@ -26,11 +28,11 @@ p{
 
 ul {
     margin:0px;
+
 }
 
 body > header {
-    background-color: orange;
-    color:white;
+    background-color: #7D1D3F;
     display: flex;
     height: 15vh;
     align-items: center;
@@ -46,14 +48,23 @@ body > header {
 #nav-ul > li {
     padding: 8px;
     margin: 16px;
-    
+
 }
 
 body > header > nav > ul {
     list-style: none;
-    text-decoration: none;
-  
+    text-decoration: none;  
+}
+
+#filter-ul > li > a {
+    color:#92C9B1;
+}
+#filter-ul > li {
+    color:#92C9B1;
     
+}
+#section-Title{
+    color: #92C9B1;
 }
 
 #championRoles{
@@ -64,10 +75,10 @@ body > header > nav > ul {
     text-align: center;
 }
 .navbutton{
-    color: white;
+    color:#9C92A3;
     text-decoration: none;
     padding: 12px;
-    border: 1px solid white;
+    border: 1px solid #A2FAA3;
     border-radius: 20%;
 }
 
@@ -78,10 +89,22 @@ body > main article {
 #main-content{
     display: flex;
     justify-content: space-around;
+    background-color: #113537;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+#articles-content{
+    background-color: #113537;
+    color: #92C9B1;
 }
 
 #main-content > div {
     width: 70%;
+    justify-content: space-around;
+    
+}
+#main-content > div > aside{
+    width: 15vw;
 }
 
 h2{
@@ -96,7 +119,7 @@ article > h4{
 }
 
 body > footer {
-    background-color: orange;
+    background-color: #7D1D3F;
     display: flex;
     justify-content: space-around;
 }
@@ -114,6 +137,6 @@ img{
     margin-left: 12px;
 }
 #footer-ul > div > li > a {
-    color: white;
+    color: #9C92A3;
     text-decoration: none;
 }
