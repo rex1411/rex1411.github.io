@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const element = document.getElementById("articles-content");
     const child = document.getElementById("SecondArticle");
     let itemType = getStoredValue('itemFilter');
-    console.log(itemType)
+    //console.log(itemType)
     let itemTypeTitle = itemType.replace(/([A-Z])/g, ' $1').trim()
     document.getElementById("itemCatogory").innerHTML = "Catogory: " + itemTypeTitle;
     
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(data => {
             for (let item in data.data) {
                 let obj = data.data[item].maps[11];
-                console.log(obj);
+                //console.log(obj);
                 if (obj) {
                 //console.log(data.data[item].maps)
                 //console.log(item)
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       });
 
-      document.getElementById("Lifesteal").addEventListener("click", function(){
+      document.getElementById("LifeSteal").addEventListener("click", function(){
         //console.log(this.getAttribute('data-filter'));
         storeValue('itemFilter',this.getAttribute('data-filter'));
         location.reload();
