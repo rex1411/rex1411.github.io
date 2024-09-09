@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const element = document.getElementById("articles-content");
     const child = document.getElementById("SecondArticle");
     let championType = getStoredValue('champFilter');
-    console.log(championType)
+    //console.log(championType)
 
     document.getElementById("championRoles").innerHTML = "Role: " + championType;
     
@@ -48,12 +48,12 @@ document.addEventListener("DOMContentLoaded", () => {
                         
                         for (let i = 0; i < data.data[CurrentChamp].allytips.length; i++) {
                             let objallytips = data.data[CurrentChamp].allytips[i];
-                            console.log(objallytips)
+                            //console.log(objallytips)
                             allytips.push(objallytips);
                         }
                         for (let i = 0; i < data.data[CurrentChamp].enemytips.length; i++) {
                             let objenemytips = data.data[CurrentChamp].enemytips[i];
-                            console.log(objenemytips)
+                            //console.log(objenemytips)
                             enemytips.push(objenemytips);
                         }
 
