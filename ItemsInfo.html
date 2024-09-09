@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="itemsapp.js"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
@@ -37,6 +38,7 @@
                         <!-- Article's header goes here-->
                          <hgroup>
                             <h2>Item Information</h2>
+                            <h3 id="itemCatogory"></h3>
                          </hgroup>
                     </header>
                     <main></main>
@@ -54,10 +56,10 @@
                     <nav>
                         <ul id = "filter-ul">
                             <li><a href="#" data-filter="All" id="All">All</a></li>
-                            <li><a href="#" data-filter="Fighter" id="Damage">Damage</a></li>
+                            <li><a href="#" data-filter="Damage" id="Damage">Damage</a></li>
                             <li><a href="#" data-filter="Lifesteal" id="Lifesteal">Lifesteal</a></li>
                             <li><a href="#" data-filter="SpellDamage" id="SpellDamage">Spell Damage</a></li>
-                            <li><a href="#" data-filter="Health" id="Health"></a>Health</li>
+                            <li><a href="#" data-filter="Health" id="Health">Health</a></li>
                             <li><a href="#" data-filter="SpellVamp" id="SpellVamp">Spell Vamp</a></li>
                             <li><a href="#" data-filter="Lane" id="Lane">Lane</a></li>
                             <li><a href="#" data-filter="ManaRegen" id="ManaRegen">Mana Regen</a></li>
@@ -81,7 +83,8 @@
                             <li><a href="#" data-filter="MagicPenetration" id="MagicPenetration">Magic Penetration</a></li>
                             <li><a href="#" data-filter="MagicResist" id="MagicResist">Magic Resist</a></li>
                             <li><a href="#" data-filter="Boots" id="Boots">Boots</a></li>
-                            <li><a href="#" data-filter="" id=""></a></li>
+                            <li><a href="#" data-filter="Mana" id="Mana">Mana</a></li>
+                            <li><a href="#" data-filter="Aura" id="Aura">Aura</a></li>
 
                         </ul>
                     </nav>

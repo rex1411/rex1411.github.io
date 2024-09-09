@@ -77,48 +77,62 @@ document.addEventListener("DOMContentLoaded", () => {
                         var SpellP = document.createElement('img');
                         SpellP.src = 'https://ddragon.leagueoflegends.com/cdn/14.17.1/img/passive/' + data.data[CurrentChamp].passive.image.full 
 
+
+                        var SpellQText = document.createElement('p');
+                        SpellQText.innerHTML = spellDescription[0]
+
+                        var SpellWText = document.createElement('p');
+                        SpellWText.innerHTML = spellDescription[1]
+
+                        var SpellEText = document.createElement('p');
+                        SpellEText.innerHTML = spellDescription[2]
+
+                        var SpellRText = document.createElement('p');
+                        SpellRText.innerHTML = spellDescription[3]
+
+                        var SpellPText = document.createElement('p');
+                        SpellPText.innerHTML = spellDescription[4]
+
+                        var champLore = document.createElement('p');
+                        champLore.innerHTML = data.data[CurrentChamp].lore;
+
                         var article = document.createElement("article")
                         .appendChild(document.createElement("h3"))
                             .appendChild(document.createTextNode(data.data[CurrentChamp].name +", " + data.data[CurrentChamp].title))
                         .parentNode.parentNode 
                         .appendChild(ChampImg)
                         .parentNode
-                        .appendChild(document.createElement("p"))
-                        .appendChild(document.createTextNode(data.data[CurrentChamp].lore))
-                        .parentNode.parentNode
+                        .appendChild(champLore)
+                        .parentNode
                         .appendChild(document.createElement("h4"))
                         .appendChild(document.createTextNode("Abilities"))
                         .parentNode.parentNode
                         .appendChild(document.createElement("h5"))
                         .appendChild(document.createTextNode(spellName[0]))
                         .parentNode.parentNode
-                        .appendChild(document.createElement("p"))
-                        .appendChild(document.createTextNode(spellDescription[0]))
-                        .parentNode.parentNode
+                        .appendChild(SpellQText)
+                        .parentNode
                         .appendChild(SpellQ)
                         .parentNode
                         .appendChild(document.createElement("h5"))
                         .appendChild(document.createTextNode(spellName[1]))
                         .parentNode.parentNode
-                        .appendChild(document.createElement("p"))
-                        .appendChild(document.createTextNode(spellDescription[1]))
-                        .parentNode.parentNode
+                        .appendChild(SpellWText)
+                        .parentNode
                         .appendChild(SpellW)
                         .parentNode
                         .appendChild(document.createElement("h5"))
                         .appendChild(document.createTextNode(spellName[2]))
                         .parentNode.parentNode
-                        .appendChild(document.createElement("p"))
-                        .appendChild(document.createTextNode(spellDescription[2]))
-                        .parentNode.parentNode
+                        .appendChild(SpellEText)
+                        .parentNode
                         .appendChild(SpellE)
                         .parentNode
                         .appendChild(document.createElement("h5"))
                         .appendChild(document.createTextNode(spellName[3]))
                         .parentNode.parentNode
-                        .appendChild(document.createElement("p"))
-                        .appendChild(document.createTextNode(spellDescription[3]))
-                        .parentNode.parentNode
+                        .appendChild(SpellRText)
+                        .parentNode
                         .appendChild(SpellR)
                         .parentNode
                         .appendChild(document.createElement("h4"))
@@ -127,9 +141,8 @@ document.addEventListener("DOMContentLoaded", () => {
                         .appendChild(document.createElement("h5"))
                         .appendChild(document.createTextNode(spellName[4]))
                         .parentNode.parentNode
-                        .appendChild(document.createElement("p"))
-                        .appendChild(document.createTextNode(spellDescription[4]))
-                        .parentNode.parentNode
+                        .appendChild(SpellPText)
+                        .parentNode
                         .appendChild(SpellP)
                         .parentNode
                         .appendChild(document.createElement("h4"))
