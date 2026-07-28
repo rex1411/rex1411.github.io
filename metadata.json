@@ -1,0 +1,6 @@
+{
+  "name": "Laura's Birthday",
+  "description": "A birthday countdown and celebration website for Laura, featuring TMNT and Bindweed themes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
